@@ -1,0 +1,24 @@
+// sass stylings for the layout
+//
+
+.section {
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.container {
+  max-width: 60rem;
+  margin: 0 auto;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__item {
+    display: flex;
+    flex-basis: calc(100% / 3 - 1rem - 1rem);
+    margin: 1rem;
+    border: 0.2rem solid $c-border;
+  }
+}
