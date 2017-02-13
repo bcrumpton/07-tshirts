@@ -23,21 +23,97 @@ $c-white: #fff;
 
 @media screen and (min-width: 500px) and (max-width: 770px) {
 
-  body {
-    background: $c-green;
-  }
-
   .grid {
+    display: flex;
 
     &__item {
       display: flex;
+      flex-basis: 100%;
       flex-direction: column;
     }
   }
 
   .shop-card {
     display: flex;
+
+    &__pic {
+      height: 12rem;
+      padding: 0;
+    }
+
+    &__info {
+      display: flex;
+      flex-direction: column;
+      align-self: center;
+    }
+
+    &__options {
+      display: flex;
+      flex-direction: column;
+    }
   }
 
+  .button-bar {
+    display: flex;
+    flex-direction: column;
+    border: 0;
+    border-left: 0.2rem solid $c-border;
+    position: relative;
 
+    &__button {
+      position: relative;
+    }
+
+    > * + * {
+      border: 0;
+      border-top: 0.2rem solid $c-border;
+    }
+  }
+
+  .dropdown {
+
+    &__list {
+      display: none;
+      position: absolute;
+      bottom: 50%;
+      left: 100%;
+      width: 90%;
+      margin: 0;
+      transform: translateY(-50%);
+      border: 0.2rem solid $c-border;
+      background: $c-white;
+
+      > * + * {
+        border-top: 0.2rem solid $c-border;
+      }
+    }
+
+    .dropdown__button {
+      padding: 0.5rem;
+
+      &--pink {
+        color: $c-pink;
+      }
+
+      &--green {
+        color: $c-green;
+      }
+
+      &--blue {
+        color: $c-blue;
+      }
+
+      &--yellow {
+        color: $c-yellow;
+      }
+    }
+  }
+
+  .dropdown:hover .dropdown__list {
+    display: block;
+   }
+
+   .dropdown__button:hover {
+     font-size: 1.5rem;
+   }
 }
