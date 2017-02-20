@@ -4,6 +4,10 @@
   color: $c-text-primary;
   text-align: center;
 
+  &__info {
+    padding: 1rem;
+  }
+
   &__pic {
     padding: 1rem;
   }

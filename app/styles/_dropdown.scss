@@ -1,11 +1,12 @@
 // sass styles for dropdown\
 
-/*
+
 .dropdown__list {
   display: none;
   position: absolute;
   bottom: 100%;
   left: 50%;
+  flex-direction: column;
   width: 90%;
   margin: 0;
   transform: translateX(-50%);
@@ -13,7 +14,7 @@
   background: $c-white;
 
   > * + * {
-    border-top: 0.2rem solid $c-border;
+    border: 0.2rem 0.2rem 0.2rem 0.2rem solid $c-border;
   }
 }
 
@@ -41,10 +42,9 @@
 }
 
 .dropdown:hover .dropdown__list {
-  display: block;
+  display: flex;
  }
 
 .dropdown__button:hover {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
  }
-*/
