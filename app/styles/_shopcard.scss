@@ -3,6 +3,7 @@
 .shop-card {
   color: $c-text-primary;
   text-align: center;
+  flex-grow: 1;
 
   &__info {
     padding: 1rem;

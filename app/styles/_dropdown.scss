@@ -14,7 +14,7 @@
   background: $c-white;
 
   > * + * {
-    border: 0.2rem 0.2rem 0.2rem 0.2rem solid $c-border;
+    border-top: 0.2rem solid $c-border;
   }
 }
 
