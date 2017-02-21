@@ -1,0 +1,21 @@
+// stylings for resetting the browser
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+img {
+  align-self: center;
+  max-width: 100%;
+}
+
+button {
+  border: 0;
+  background: none;
+}

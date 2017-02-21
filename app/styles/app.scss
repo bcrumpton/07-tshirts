@@ -3,4 +3,94 @@
 
 // $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 // @import 'font-awesome';
+
+$c-pink: #e577aa;
+$c-green: #7abe93;
+$c-blue: #72bbe9;
+$c-yellow: #e5b178;
+
+$c-border: #296db5;
+$c-text-primary: rgb(109, 154, 204);
+$c-white: #fff;
+
 @import 'box-sizing';
+@import 'reset';
+@import 'layout';
+@import 'shopcard';
+@import 'button';
+@import 'dropdown';
+
+
+@media screen and (min-width: 500px) and (max-width: 770px) {
+
+  .grid {
+    display: flex;
+
+    &__item {
+      display: flex;
+      flex-basis: 100%;
+      flex-direction: column;
+      min-width: 27rem;
+    }
+  }
+
+  .shop-card {
+    display: flex;
+
+    &__pic {
+      height: 12rem;
+      padding: 0;
+    }
+
+    &__info {
+      display: flex;
+      flex-direction: column;
+      align-self: center;
+    }
+
+    &__options {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__description {
+      padding: 1rem;
+    }
+  }
+
+  .button-bar {
+    display: flex;
+    flex-direction: column;
+    min-width: 1rem;
+    border: 0;
+    border-left: 0.2rem solid $c-border;
+
+    > * + * {
+      border: 0;
+      border-top: 0.2rem solid $c-border;
+    }
+  }
+
+  .dropdown {
+    &__list {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      flex-direction: row-reverse;
+      transform: translate(-100%, 0);
+      border: 0;
+      border-right: 0.2rem solid $c-border;
+    }
+
+    &__button {
+      width: 100%;
+      padding: 1rem;
+      border-top: 0.2rem solid $c-border;
+      border-bottom: 0.2rem solid $c-border;
+      border-left: 0.2rem solid $c-border;
+      background: $c-white;
+    }
+  }
+}

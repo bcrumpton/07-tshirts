@@ -1,0 +1,15 @@
+// sass stylings for shop card
+
+.shop-card {
+  color: $c-text-primary;
+  text-align: center;
+
+  &__info {
+    flex-grow: 1;
+    padding: 0.5rem;
+  }
+
+  &__pic {
+    padding: 1rem;
+  }
+}
